@@ -6,13 +6,17 @@ public class Facture
 {
 	private Client client;
 	private int montant;
+	private LocalDate dateFacture;
+	private int reglementFacture;
 	
-	Facture( Client client, int montant)
+	
+   Facture( Client client, int montant)
 	
 	{
 		
 	this.client = client;
 	this.montant =  montant;
+	this.dateFacture = LocalDate.now();
 	
 	}
 	
