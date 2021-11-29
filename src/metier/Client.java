@@ -1,13 +1,13 @@
 package metier;
 
-//import java.util.ArrayList;//
+
+import java.util.ArrayList;
 import java.util.List;
 
 public class Client
 {
-	private String nom; 
-	private Facture facture;
-	// private ArrayList<Facture> factures;//
+	private String nom;
+	private ArrayList<Facture> factures = new ArrayList<>();
 	/** 
 	 * Crée un client.
 	 * @param nom le nom du client. 
@@ -48,6 +48,7 @@ public class Client
 	public Facture createFacture(int montant)
 	{
 		Facture facture = new Facture(this, montant);
+		factures.add(facture);//
 		return facture;
 	}
 	
@@ -58,7 +59,9 @@ public class Client
 
 	public List<Facture> getFactures()
 	{ 
-		return null;
+		ArrayList<Facture> Copie = new ArrayList <>(factures);
+		
+		return Copie;
 	}
 	
 	/**
