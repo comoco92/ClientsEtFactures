@@ -72,7 +72,7 @@ public class Client
 	
 	public int sommeMontants()
 	{
-		return 0;
+		return this.sommeMontants();
 	}
 
 	/**
