@@ -8,6 +8,7 @@ public class Client
 {
 	private String nom;
 	private ArrayList<Facture> factures = new ArrayList<>();
+	private boolean reglementFacture;
 	/** 
 	 * Crée un client.
 	 * @param nom le nom du client. 
@@ -81,9 +82,11 @@ public class Client
 	 * @return la facture créée.
 	 */
 	
-	public Facture createFacture(int montant, boolean reglee)
+	public Facture createFacture(int montant, boolean reglementFacture)
 	{
-		return null;
+		Facture facture = new Facture(this, montant, reglementFacture);
+		factures.add(facture);
+		return facture;
 	}	
 	
 	/**
