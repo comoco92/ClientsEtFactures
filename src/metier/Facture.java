@@ -19,6 +19,15 @@ public class Facture
 	this.dateFacture = LocalDate.now();
 	
 	}
+   
+   Facture( Client client, int montant, boolean reglementFacture)
+   
+   {
+	   this.client = client;
+	   this.montant = montant;
+	   this.reglementFacture = reglementFacture;
+	   
+   }
 	
 	
 	
