@@ -77,7 +77,6 @@ public class Facture
 	
 	public Facture copie(int montant)
 	{
-		getcreateFacture();
 		return null;
 	}
 }
