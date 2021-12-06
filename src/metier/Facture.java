@@ -7,7 +7,7 @@ public class Facture
 	private Client client;
 	private int montant;
 	private LocalDate dateFacture;
-	private int reglementFacture;
+	private boolean reglementFacture;
 	
 	
    Facture( Client client, int montant)
@@ -44,12 +44,12 @@ public class Facture
 
 	/**
 	 * Retourne vrai si la facture est reglée.
-	 * @return vrai ssi la facture est reglée.
+	 * @return vrai si la facture est reglée.
 	 */
 	
 	public boolean estReglee()
 	{
-		return true;
+		return reglementFacture;
 	}
 
 	/**
@@ -75,9 +75,9 @@ public class Facture
 	 * @return une copie de la facture.
 	 */
 	
-	public Facture copie()
+	public Facture copie(int montant)
 	{
-		
+		getcreateFacture();
 		return null;
 	}
 }
