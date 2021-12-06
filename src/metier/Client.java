@@ -70,9 +70,9 @@ public class Client
 	 * @return la somme des montants des factures.
 	 */
 	
-	public int sommeMontants()
+	public int sommeMontants(int montant)
 	{
-		return this.sommeMontants();
+		return montant;
 	}
 
 	/**
