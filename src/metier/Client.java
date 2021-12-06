@@ -70,9 +70,14 @@ public class Client
 	 * @return la somme des montants des factures.
 	 */
 	
-	public int sommeMontants(int montant)
+	public int sommeMontants()
 	{
-		return montant;
+		int sum = 0;
+		for(int i =0; i< factures.size(); i++)
+		{
+			sum = sum + factures.get(i).getMontant();
+		}
+		return sum;
 	}
 
 	/**
